@@ -8,4 +8,8 @@
     </string>
     <string name="search_title">search</string>
     <string name="city_name_hint">city name</string>
+    <string name="city_name">City name : %1$s</string>
+    <string name="weather_description">Description : %1$s</string>
+    <string name="pressure">Pressure : %1$.0f</string>
+    <string name="wind">Wind : %1$.0f</string>
 </resources>

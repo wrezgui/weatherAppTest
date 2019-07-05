@@ -45,10 +45,14 @@ class WeatherDetailViewHolder(
                 Snackbar.LENGTH_LONG
             )
             State.SUCCESS -> {
-                rootView.city_name.text = screenUiData.data.cityName
-                rootView.weather_description.text = screenUiData.data.weather!!.first().description
-                rootView.main_pressure.text = screenUiData.data.main!!.pressure.toString()
-                rootView.wind_speed.text = screenUiData.data.wind!!.speed.toString()
+                rootView.city_name.text = rootView.context.getString(R.string.city_name, screenUiData.data.cityName)
+                rootView.weather_description.text = rootView.context.getString(
+                    R.string.weather_description,
+                    screenUiData.data.weather!!.first().description
+                )
+                rootView.main_pressure.text =
+                    rootView.context.getString(R.string.pressure, screenUiData.data.main!!.pressure)
+                rootView.wind_speed.text = rootView.context.getString(R.string.wind, screenUiData.data.wind!!.speed)
             }
         }
     }

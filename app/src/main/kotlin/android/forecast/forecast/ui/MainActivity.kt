@@ -5,7 +5,6 @@ import android.forecast.forecast.viewholder.WeatherDetailViewHolder
 import android.forecast.forecast.viewmodel.WeatherDetailViewModel
 import android.forecast.forecast.viewmodel.WeatherViewModelFactory
 import android.os.Bundle
-import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 
@@ -21,10 +20,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         viewHolder = WeatherDetailViewHolder(findViewById(R.id.rootView), viewModel, lifecycle)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.search_menu, menu)
-        return true
     }
 }
