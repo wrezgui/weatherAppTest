@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Forecast</string>
+    <string name="error_retreive_data">an error occurred while downloading the data. please check the city name or your
+        internet connection
+    </string>
+    <string name="notice">You can change city in the search bar. If the city does not exist you will get an error
+        message!
+    </string>
+    <string name="search_title">search</string>
+    <string name="city_name_hint">city name</string>
+</resources>
