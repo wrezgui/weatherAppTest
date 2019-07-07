@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -56,6 +58,9 @@ dependencies {
 
     //Design
     implementation "com.google.android.material:material:$design"
+    implementation "com.github.bumptech.glide:glide:$glide"
+    kapt "android.arch.lifecycle:compiler:1.1.1"
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
 
     //Tests
     testImplementation "junit:junit:$test_junit"

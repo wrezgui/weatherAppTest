@@ -5,12 +5,15 @@ import java.math.BigDecimal
 
 class Main {
 
-    @SerializedName("temps")
-    val temps: BigDecimal = BigDecimal.ZERO
+    @SerializedName("temp")
+    val temperature: BigDecimal = BigDecimal.ZERO
 
     @SerializedName("pressure")
     val pressure: BigDecimal = BigDecimal.ZERO
 
-    @SerializedName("humidity")
-    val humidity: BigDecimal = BigDecimal.ZERO
+    @SerializedName("temp_max")
+    val temperatureMax: BigDecimal = BigDecimal.ZERO
+
+    @SerializedName("temp_min")
+    val temperatureMin: BigDecimal = BigDecimal.ZERO
 }

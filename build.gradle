@@ -17,6 +17,7 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenCentral()
         google()
         jcenter()
     }
@@ -36,4 +37,5 @@ ext {
     stetho = "3:1.5.1"
     lifecycle = "2.0.0"
     design = "1.0.0"
+    glide = "4.9.0"
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="base_url" translatable="false">http://api.openweathermap.org/data/2.5/</string>
+    <string name="base_url_img" translatable="false">http://openweathermap.org/img/wn/%1$s@2x.png"</string>
     <string name="api_key" translatable="false">d832cf0dabb09cbc4b68741612ec8bb8</string>
 </resources>
